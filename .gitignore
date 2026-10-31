@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# out/ is committed on purpose: the README cites the figures and the numbers,
+# so the repo has to carry the run they came from.

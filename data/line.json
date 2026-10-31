@@ -1,0 +1,14 @@
+{
+  "name": "Housing machining line",
+  "comment": "Five stations. OP20 Milling is the bottleneck on both nameplate cycle time and effective capacity, and is also the least reliable - the usual real combination.",
+  "buffer_capacity": 2,
+  "run_seconds": 28800,
+  "warmup_seconds": 3600,
+  "stations": [
+    {"name": "OP10 Load",    "mean_cycle": 38.0, "cycle_cv": 0.15, "mtbf_operating": 7200,  "mttr": 300},
+    {"name": "OP20 Mill",    "mean_cycle": 52.0, "cycle_cv": 0.20, "mtbf_operating": 5400,  "mttr": 420},
+    {"name": "OP30 Drill",   "mean_cycle": 41.0, "cycle_cv": 0.18, "mtbf_operating": 7200,  "mttr": 300},
+    {"name": "OP40 Deburr",  "mean_cycle": 36.0, "cycle_cv": 0.30, "mtbf_operating": 10800, "mttr": 240},
+    {"name": "OP50 Inspect", "mean_cycle": 44.0, "cycle_cv": 0.10, "mtbf_operating": 14400, "mttr": 180, "scrap_rate": 0.02}
+  ]
+}
