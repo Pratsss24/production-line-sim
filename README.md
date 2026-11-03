@@ -210,7 +210,8 @@ two numbers differ for that reason and no other.
 | `src/line.py` | The SimPy model: stations, buffers, blocking, starving, failures. |
 | `src/metrics.py` | Bottleneck detection, Little's law, confidence and paired intervals. Pure. |
 | `src/experiments.py` | The three experiments. Pure. |
-| `src/charts.py`, `src/report.py` | Four figures and a self-contained HTML report. |
+| `src/charts.py`, `src/report.py` | Four figures and a printable PDF report. |
+| `src/paper.py` | Page composition: A4 pages, tables, figure bands. |
 | `run.py` | Everything, in order. |
 | `data/line.json` | The process: cycle times, CVs, MTBF/MTTR, scrap, buffers. |
 

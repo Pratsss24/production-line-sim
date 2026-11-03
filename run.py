@@ -103,12 +103,12 @@ def main() -> int:
                                           IMPROVEMENT_FACTOR),
         "levers": charts.levers(lever_base, levers, out_dir),
     }
-    html_path = report.build(
+    report_path = report.build(
         result, sweep, knee, improve_base, improvements, lever_base, levers,
-        figures, out_dir / "report.html", args.replications,
+        figures, out_dir / "report.pdf", args.replications,
         args.experiment_hours, IMPROVEMENT_FACTOR)
 
-    print(f"\nreport  {html_path}")
+    print(f"\nreport  {report_path}")
     for path in figures.values():
         print(f"figure  {path}")
     return 0
